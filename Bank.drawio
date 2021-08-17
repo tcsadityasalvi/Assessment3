@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2021-08-17T08:28:20.692Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="4T29nnOjizbAYVmwMReU" version="14.9.6" type="github">
+  <diagram id="tcQu7eXmCV168m-QvBkC" name="Page-1">
+    <mxGraphModel dx="1038" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-1" value="BankXYZ" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="50" y="110" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-2" value="Bank id: int (10) (PK)&#xa;&#xa;Bank Address: varchar(50)&#xa;&#xa;Bank Branch: varchar(30)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="ljEg_jBfLF-gLI1LRyog-1" vertex="1">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-5" value="Savings Account" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="340" y="50" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-6" value="SavingsAccount id: int(10) (PK)&#xa;&#xa;OwnerName: varchar(10)&#xa;&#xa;Address: varchar(50)&#xa;&#xa;Balance: double(50)&#xa;&#xa;Date: Datetime&#xa;&#xa;Status: boolean" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="ljEg_jBfLF-gLI1LRyog-5" vertex="1">
+          <mxGeometry y="26" width="190" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-13" value="Demat Account" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="340" y="300" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-14" value="DematAccount id: int(10) (PK)&#xa;&#xa;OwnerName: varchar(10)&#xa;&#xa;Address: varchar(50)&#xa;&#xa;Balance: double(50)&#xa;&#xa;Date: Datetime&#xa;&#xa;Status: boolean" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="ljEg_jBfLF-gLI1LRyog-13" vertex="1">
+          <mxGeometry y="26" width="190" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-17" value="Current Account" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="60" y="300" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-18" value="CurrentAccount id: int(10) (PK)&#xa;&#xa;OwnerName: varchar(10)&#xa;&#xa;Address: varchar(50)&#xa;&#xa;Balance: double(50)&#xa;&#xa;Date: Datetime&#xa;&#xa;Status: boolean" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="ljEg_jBfLF-gLI1LRyog-17" vertex="1">
+          <mxGeometry y="26" width="190" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-21" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=-0.016;entryY=0.042;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ljEg_jBfLF-gLI1LRyog-5" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="210" y="130" as="sourcePoint" />
+            <mxPoint x="310" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-22" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=-0.011;entryY=0.055;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ljEg_jBfLF-gLI1LRyog-13" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="210" y="230" as="sourcePoint" />
+            <mxPoint x="310" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljEg_jBfLF-gLI1LRyog-23" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" target="ljEg_jBfLF-gLI1LRyog-17" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="70" y="240" as="sourcePoint" />
+            <mxPoint x="170" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
